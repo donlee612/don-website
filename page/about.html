@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>你的紫色宇宙・關於我</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary:       #b19cd9;
+      --primary-dark:  #967bb6;
+      --primary-light: #d7c8e8;
+      --accent:        #81d8d0;
+      --accent-dark:   #5fb3ac;
+      --bg:            #f5f0ff;
+      --bg-gradient:   linear-gradient(135deg, #f5f0ff 0%, #e8e0ff 100%);
+      --card:          #ffffff;
+      --text:          #4a3c5e;
+      --text-light:    #6b5a8a;
+      --shadow:        0 12px 40px rgba(177, 156, 217, 0.18);
+    }
+
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Poppins', 'Noto Sans TC', system-ui, sans-serif;
+      background: var(--bg-gradient);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    nav {
+      position: fixed;
+      top: 0; width: 100%;
+      padding: 1.5rem 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      background: rgba(245, 240, 255, 0.82);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(177, 156, 217, 0.2);
+    }
+    .logo {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-decoration: none;
+    }
+    .nav-links a {
+      color: var(--text-light);
+      text-decoration: none;
+      margin-left: 2.5rem;
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+    .nav-links a:hover {
+      color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    main {
+      padding-top: 140px;
+      padding-bottom: 6rem;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 5%;
+    }
+
+    h1 {
+      font-size: clamp(3.5rem, 8vw, 6rem);
+      font-weight: 800;
+      background: linear-gradient(90deg, #d7c8e8, #b19cd9, #81d8d0);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      margin: 4rem 0;
+    }
+
+    .about-text h2 {
+      font-size: 2.2rem;
+      color: var(--primary);
+      margin-bottom: 1.4rem;
+    }
+
+    .about-text p {
+      font-size: 1.18rem;
+      color: var(--text-light);
+      margin-bottom: 1.6rem;
+    }
+
+    .profile-img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(177,156,217,0.15);
+      display: block;
+      margin: 0 auto;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 2rem;
+      justify-content: center;
+    }
+    .skill-tag {
+      padding: 0.6rem 1.4rem;
+      background: rgba(177,156,217,0.08);
+      border: 1px solid rgba(177,156,217,0.25);
+      border-radius: 999px;
+      font-size: 0.95rem;
+      color: var(--primary);
+    }
+
+    @media (max-width: 768px) {
+      .about-grid { grid-template-columns: 1fr; }
+      .profile-img { max-width: 360px; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">紫色夢境</a>
+    <div class="nav-links">
+      <a href="about.html">關於我</a>
+      <a href="works.html">創作</a>
+      <a href="contact.html">聯繫</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <h1>關於我</h1>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>嗨，我是 Don</h2>
+          <p>一個喜歡用柔和紫色與Tiffany藍捕捉日常夢幻時刻的創作者。</p>
+          <p>喜歡把生活中的小情緒、光影變化、以及對美的直覺，轉化成視覺語言。</p>
+          <p>目前主要創作方向：氛圍系插畫、柔和色調視覺設計、以及偶爾的動態小實驗。</p>
+
+          <div class="skills">
+            <span class="skill-tag">Procreate</span>
+            <span class="skill-tag">Photoshop</span>
+            <span class="skill-tag">After Effects</span>
+            <span class="skill-tag">Lightroom</span>
+            <span class="skill-tag">中文・英文</span>
+            <span class="skill-tag">薰衣草收集者</span>
+          </div>
+        </div>
+
+        <div>
+          <!-- 請替換成你自己的照片或插畫 -->
+          <img src="https://via.placeholder.com/500x600/f5f0ff/b19cd9?text=Your+Portrait+Here" alt="Profile" class="profile-img">
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
